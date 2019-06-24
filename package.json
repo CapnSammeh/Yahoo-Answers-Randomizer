@@ -1,12 +1,27 @@
 {
-  "name": "yahoo-answers-randomiser",
-  "version": "0.1.0",
-  "private": true,
+  "name": "yahoo-answers-randomizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CapnSammeh/Yahoo-Answers-Randomizer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CapnSammeh/Yahoo-Answers-Randomizer/issues"
+  },
+  "homepage": "https://github.com/CapnSammeh/Yahoo-Answers-Randomizer#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "request-promise": "^4.2.4",
     "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
     "lodash": "^4.17.11",
-    "random-words": "^1.1.0",
+    "random-word": "^2.0.0",
+    "request-promise": "^4.2.4"
   }
 }
