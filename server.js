@@ -39,7 +39,7 @@ app.post('/', function(req, res){
   res.render('index', {url: result});
 })
 
-app.listen(80, function(){
+app.listen(3000, function(){
   generateRandomAnswer();
-  console.log("App Running on Port 80!");
+  console.log("App Running on Port 3000!");
 })
