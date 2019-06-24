@@ -29,6 +29,6 @@ app.get('/', function(req, res){
   res.render('index', {url: result});
 })
 
-app.listen(80, function(){
-  console.log("App Running on Port 80");
+app.listen(3000, function(){
+  console.log("App Running on Port 3000!");
 })
