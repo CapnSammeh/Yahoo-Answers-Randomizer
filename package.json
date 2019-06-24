@@ -1,0 +1,11 @@
+{
+  "name": "yahoo-answers-randomiser",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express",
+    "request-promise",
+    "cheerio",
+    "lodash",
+    "random-words",
+  },
