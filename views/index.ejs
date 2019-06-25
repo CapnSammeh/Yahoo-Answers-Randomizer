@@ -3,19 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Yahoo Answers Randomizer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container">
-      <h1 style="text-align: center">Yahoo Answers Randomizer</h1>
-      <div style="text-align: center; font-size: 20">
-        <a href=<%= url %>>New Answer</a>
+    <section class="h-100">
+      <div class="row h-100 justify-content-center align-items-center">
+        <div>
+          <div class="card text-center">
+            <div class="card-header">
+              CapnSammeh Presents...
+            </div>
+            <div class="card-body">
+              <h1 class="card-title">Yahoo Answers Randomizer</h1>
+              <a onclick="location.reload()" class="btn btn-primary" href=<%= url %> target="_blank">New Answer</a>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-light text-dark" href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/CapnSammeh"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a Beer"><span style="margin-left:5px">Buy me a Beer</span></button>
+            </div>
+        </div>
       </div>
     </div>
-    <div style="text-align: center; position: fixed; bottom: 30px; width: 100%">
-      <style>
-      .bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#000000 !important;background-color:#FFFFFF !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#000000 !important;}
-      </style>
-      <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/CapnSammeh"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a Beer"><span style="margin-left:5px">Buy me a Beer</span></a>
-    </div>
-  </body>
+  </section>
+
+</body>
 </html>

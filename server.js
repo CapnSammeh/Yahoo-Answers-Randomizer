@@ -8,7 +8,7 @@ app.set('view engine', 'ejs')
 
 let searchResult = 'https://au.answers.yahoo.com/search/search_result?fr=uh3_answers_vert_gs&type=2button&p='
 let answerURL = "https://au.answers.yahoo.com/question/index?qid=";
-let result = '';
+var result = "";
 
 function generateRandomAnswer(){
   let randomWord = randomWords();
@@ -19,7 +19,6 @@ function generateRandomAnswer(){
     for (var i = 0; i < results.length; i++) {
       if(results[i].attribs.id.toString().includes("q-")){
         let answer = results[i].attribs.id.slice(2);
-        //console.log(answer);
         answers.push(answer);
       };
     };
@@ -39,7 +38,7 @@ app.post('/', function(req, res){
   res.render('index', {url: result});
 })
 
-app.listen(3000, function(){
+app.listen(80, function(){
   generateRandomAnswer();
-  console.log("App Running on Port 3000!");
+  console.log("App Running on Port 80!");
 })
